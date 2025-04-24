@@ -19,12 +19,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /* period of tapping(ms) */
 #ifndef TAPPING_TERM
-#    define TAPPING_TERM 200
+#    define TAPPING_TERM 250
 #endif
 
 /* period of quick tap(ms) */
 #if !defined(QUICK_TAP_TERM) || QUICK_TAP_TERM > TAPPING_TERM
-#    define QUICK_TAP_TERM TAPPING_TERM
+#    define QUICK_TAP_TERM 0
 #endif
 
 /* tap count needed for toggling a feature */
